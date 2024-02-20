@@ -1,0 +1,54 @@
+.dock {
+    max-width: 371px;
+    height: 98px;
+    border-radius: 41px;
+    position: relative;
+}
+
+.dock::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 371px;
+    height: 98px;
+    border-radius: 41px;
+    background: rgba(191, 191, 191, 0.44);
+    ;
+    z-index: -2;
+}
+
+.dock::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 371px;
+    height: 98px;
+    border-radius: 41px;
+    /* background: rgba(191, 191, 191, 0.44); */
+    z-index: -1;
+}
+
+.dock-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 20px;
+}
+
+.dock__app {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.dock__app-icon {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.15s linear;
+}
+
+/* hover and animation*/
+
+.dock__app-icon:hover {
+    transform: scale(1.1);
+}

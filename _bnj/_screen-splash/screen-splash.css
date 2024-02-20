@@ -1,0 +1,22 @@
+.screen-splash__logo {
+    padding-top: 170px;
+    padding-left: 40px;  
+}
+
+.screen-splash {
+    width: 393px;
+    height: 852px;
+    background-color: #fff;
+    border-radius: 55px;
+    animation-name: disappearance;
+    animation-duration: 0.3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}   
+
+@keyframes disappearance {
+
+    from {opacity: 1;}
+    to {opacity: 0;}
+    
+}

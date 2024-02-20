@@ -1,0 +1,53 @@
+@import url('../_screen-splash/screen-splash.css');
+
+.bnj-main {
+    display: none;
+    width: 393px;
+    height: 852px;
+    position: absolute;
+    top: calc((932px - 852px) / 2);
+    left: calc((473px - 393px) / 2);
+    border-radius: 50px;
+    background: #000;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+}
+
+/* close button */
+
+.close-btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+.close-btn-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn:hover {
+    transform: rotate(180deg);
+}
+
+
+/* animations */
+
+@keyframes fadeIn {
+    from {transform: scale(0)};
+    to {transform: scale(1)};
+}
+
+.fadeOut {
+    transform: scale(0);
+    transition: transform 0.4s linear;
+}

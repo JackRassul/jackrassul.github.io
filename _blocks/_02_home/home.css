@@ -1,0 +1,50 @@
+.home-main {
+    margin-top: 10px;
+    /* background-color: rgba(0, 0, 0, 0.147); */
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 19px;
+}
+
+.apps-rows-wrapper {
+    padding: 26px 31px 0 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-main__app {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.home-main__app-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform   0.15s linear;
+}
+
+.home-main__app-name {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.apps-rows-wrapper--last-row {
+    justify-content: flex-start;
+    column-gap: 30.33px;
+}
+
+/* hover and animation*/
+
+.home-main__app-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+

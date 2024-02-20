@@ -1,0 +1,46 @@
+@import url('new_reset.css');
+@import url('./_blocks/_01_status-bar/status-bar.css');
+@import url('./_blocks/_02_home/home.css');
+@import url('./_blocks/_03_search-form/search-form.css');
+@import url('./_blocks/_04_dock/dock.css');
+@import url('./_bnj/_main/main.css');
+
+@font-face{font-family:sf pro display;font-style:normal;font-weight:400;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff) format('woff')}@font-face{font-family:sf pro display;font-style:italic;font-weight:100;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff) format('woff')}@font-face{font-family:sf pro display;font-style:italic;font-weight:200;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff) format('woff')}@font-face{font-family:sf pro display;font-style:italic;font-weight:300;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff) format('woff')}@font-face{font-family:sf pro display;font-style:normal;font-weight:500;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff) format('woff')}@font-face{font-family:sf pro display;font-style:italic;font-weight:600;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff) format('woff')}@font-face{font-family:sf pro display;font-style:normal;font-weight:700;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff) format('woff')}@font-face{font-family:sf pro display;font-style:italic;font-weight:800;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff) format('woff')}@font-face{font-family:sf pro display;font-style:italic;font-weight:900;src:local('SF Pro Display'),url(https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff) format('woff')}
+
+html {
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    height: 932px;
+    width: calc(100vw - (100vw - 473px));
+    margin: 0 auto;
+    margin-top: calc((100vh - 932px) / 2);
+    font-family: 'SF Pro Display';
+}
+
+.container {
+    width: 393px;
+    margin: 0 auto;
+}
+
+.mockup {
+    position: absolute;
+    z-index: -1;
+}
+
+.wallpaper {
+    background: url('./src/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 872px;
+    position: absolute;
+    left: calc((473px - 420px) / 2);
+    z-index: -2;
+    /* margin: 0 auto; */
+    margin-top: calc((932px - 872px) / 2);
+    border-radius: 70px;
+    filter: blur(10px);
+}

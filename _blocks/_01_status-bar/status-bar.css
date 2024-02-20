@@ -1,0 +1,42 @@
+.status-bar {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: content-box;
+    padding-top: calc((932px - 852px) / 2);
+}
+
+.status-bar__left-side {
+    width: 138px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.status-bar__rigth-side {
+    width: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    padding-top: 8px;
+}
+
+.status-bar__time {
+    font-weight: 600;
+    color: #fff;
+    font-size: 17px;
+}
+
+.status-bar__LTE {
+
+}
+
+.status-bar__wifi-icon {
+
+}
+
+.status-bar__battery {
+
+}
